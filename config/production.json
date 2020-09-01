@@ -1,0 +1,5 @@
+{
+  "mongoURI": "mongodb+srv://saurabh0208:jet123.ABC@paypayconnector.gxqxc.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  "jwtSecret": "paypay",
+  "tokenExpireTime": 36000
+}

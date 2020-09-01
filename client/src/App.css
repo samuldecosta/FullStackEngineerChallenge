@@ -1,0 +1,201 @@
+/* Global Styles */
+:root {
+  --primary-color: #a38200de;
+  --dark-color: #343a40;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+#root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  position: fixed;
+  background: url("./img/showcase.jpg") no-repeat center center fixed;
+}
+.main-section {
+  overflow-y: auto;
+  max-height: 80vh;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 970px;
+}
+
+.main-section::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 4;
+  max-width: 200px;
+  height: 100%;
+  top: 0;
+  opacity: 0.9;
+  border-radius: unset;
+}
+
+.navbar ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.navbar ul .root a img {
+  width: 100px;
+}
+
+.navbar ul li {
+  margin: 20px 0;
+}
+
+.navbar ul li:last-child {
+  margin-top: auto;
+}
+
+.navbar a {
+  font-size: 15px;
+  color: #fff;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.navbar a:focus {
+  text-decoration: none;
+}
+
+.navbar .welcome span {
+  margin-right: 0.6rem;
+}
+
+.mobile-nav {
+  height: auto;
+  width: 100%;
+  max-width: none;
+  opacity: 1;
+}
+.mobile-nav .mobile-nav-action-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.mobile-nav .toggel-btn {
+  margin-left: auto;
+  color: white;
+  background-color: transparent;
+}
+
+.mobile-nav .toggel-btn:focus,
+.mobile-nav .toggel-btn:hover {
+  border: none;
+  outline: none;
+}
+
+.mobile-nav .feedo-root img {
+  width: 60px;
+}
+.mobile-nav .show {
+  height: 100%;
+  text-align: center;
+}
+.mobile-nav .hide {
+  display: none;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="date"],
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  padding-left: 15px;
+  font-size: 14px;
+  border: 1px solid #a38200de;
+  background: #ffea98de;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="date"] {
+  width: 80%;
+  height: 45px;
+  border-radius: 6px;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="password"]:focus,
+.form input[type="date"]:focus,
+.form input[type="submit"]:focus,
+.form select:focus,
+.form textarea:focus {
+  box-shadow: 0 0 3pt 2pt #a38200de;
+  outline: none !important;
+}
+
+.form .form-group {
+  margin: 15px 0;
+}
+
+.active-loader {
+  top: 0;
+  left: 0;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  align-items: center;
+  opacity: 0.5;
+  background: black;
+}
+
+.active-loader .loading-icon {
+  background: url("./img/loader.gif") no-repeat;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  background-size: contain;
+}

@@ -1,0 +1,39 @@
+{
+  "name": "paypay_meren_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "add:dependencies": "npm i && npm i --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm i --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuldecosta/PAYPAY_MEREN_ASSIGNMENT.git"
+  },
+  "author": "saurabh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samuldecosta/PAYPAY_MEREN_ASSIGNMENT/issues"
+  },
+  "homepage": "https://github.com/samuldecosta/PAYPAY_MEREN_ASSIGNMENT#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "gravatar": "^1.8.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
+}
