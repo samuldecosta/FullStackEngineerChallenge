@@ -1,38 +1,64 @@
-# Full Stack Developer Challenge
-This is an interview challengs. Please feel free to fork. Pull Requests will be ignored.
+# Feedo
 
-## Requirements
-Design a web application that allows employees to submit feedback toward each other's performance review.
+Feedo is a Feedback portal to other employees where we have two different user journey.
 
-*Partial solutions are acceptable.*  It is not necessary to submit a complete solution that implements every requirement.
+# Live Demo : https://arcane-sierra-17516.herokuapp.com/
 
-### Admin view
-* Add/remove/update/view employees
-* Add/update/view performance reviews
-* Assign employees to participate in another employee's performance review
+# 1. Admin Journey:
 
-### Employee view
-* List of performance reviews requiring feedback
-* Submit feedback
+1. User Login
+2. Dashboard: Admin can view and manage all employees here.
+   a. Update Employee information.
+   b. Remove Employee.
+3. Feedback Page
+   a. Give feedback to employee
+   b. Request other employee to submit feedbsack for selected employee
+4. Update profile
 
-## Challenge Scope
-* High level description of design and technologies used
-* Server side API (using a programming language and/or framework of your choice)
-  * Implementation of at least 3 API calls
-  * Most full stack web developers at PayPay currently use Java, Ruby on Rails, or Node.js on the server(with MySQL for the database), but feel free to use other tech if you prefer
-* Web app
-  * Implementation of 2-5 web pages using a modern web framework (e.g. React or Angular) that talks to server side
-    * This should integrate with your API, but it's fine to use static responses for some of it 
-* Document all assumptions made
-* Complete solutions aren't required, but what you do submit needs to run.
+# 2. Non Admin Employee Journey
 
-## How to complete this challenge
-* Fork this repo in github
-* Complete the design and code as defined to the best of your abilities
-* Place notes in your code to help with clarity where appropriate. Make it readable enough to present to the PayPay interview team
-* Complete your work in your own github repo and send the results to us and/or present them during your interview
+1. Dashboard: View all open feedback requests
+   a. Reject review
+   b. Go to review page
+2. Feedback Submit page
 
-## What are we looking for? What does this prove?
-* Assumptions you make given limited requirements
-* Technology and design choices
-* Identify areas of your strengths
+# Major tech stack
+
+- Mongo Db
+- React JS
+- Redux
+- Redux-Thunk
+- Express JS
+- Node JS
+- styled-component
+
+# Feedo have following key features:
+
+- Session management (JWT TOKEN)
+- Single page application
+- Server-side Validations
+- Global alert system throughout the app
+- Private routing
+- Mobile friendly
+- Theme object availabel throughout all component
+
+### Installation
+
+Feedo requires [Node.js](https://nodejs.org/) to run.
+
+Install the dependencies and devDependencies and start the server.
+
+```sh
+$ npm run add:dependencies
+$ node dev
+```
+
+### Todos
+
+- Write Tests
+- Theme selector
+- moving static data to some CMS
+
+## License
+
+MIT
